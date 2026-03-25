@@ -90,16 +90,26 @@ function initMobileNav() {
   const links = document.getElementById('navLinks');
   if (!toggle || !links) return;
 
+  // Ensure accessibility attributes are set
+  toggle.setAttribute('aria-controls', 'navLinks');
+  toggle.setAttribute(
+    'aria-expanded',
+    links.classList.contains('open') ? 'true' : 'false'
+  );
+
   toggle.addEventListener('click', () => {
     toggle.classList.toggle('open');
     links.classList.toggle('open');
-    document.body.style.overflow = links.classList.contains('open') ? 'hidden' : '';
+    const isOpen = links.classList.contains('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
   links.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       toggle.classList.remove('open');
       links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     });
   });
