@@ -1,53 +1,53 @@
-# 🚀 Portfolio — Gustave | Data Scientist & AI/ML Engineer
+# Portfolio Gustave
 
-> **Ce repo est le support de la démo live de l'atelier GitHub Copilot — Avisia, Mars 2026.**
-> L'objectif est de construire un site portfolio/CV numérique entièrement avec GitHub Copilot Agent Mode.
+Portfolio personnel de Gustave, Data Scientist et Ingenieur IA/ML chez Avisia, realise en HTML/CSS/JS vanilla et deploye sur GitHub Pages.
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-success?logo=github)](https://gvern.github.io/Agentdev0326)
+## Objectif
 
-## 🎯 Objectif
+Ce depot sert a la fois de portfolio numerique et de support de demonstration pour l'atelier GitHub Copilot Agent Mode organise chez Avisia en mars 2026.
 
-Site web personnel de type portfolio / CV numérique pour **Gustave**, Data Scientist & AI/ML Engineer chez **Avisia** (cabinet de conseil parisien spécialisé en data & IA).
+## Stack
 
-## 📋 Sections
+- HTML semantique
+- CSS mobile-first avec design system base sur variables CSS
+- JavaScript vanilla pour les interactions
+- Google Fonts pour Inter et JetBrains Mono
+- GitHub Pages pour le deploiement statique
 
-| # | Section | Description |
-|---|---------|-------------|
-| 1 | **Hero** | Nom, titre animé, tagline, CTA |
-| 2 | **À propos** | Bio, valeurs, centres d'intérêt |
-| 3 | **Compétences** | Stack technique avec barres de niveau animées |
-| 4 | **Projets** | Cards avec titre, description, tags, liens |
-| 5 | **Expérience** | Timeline professionnelle & formation |
-| 6 | **Contact** | LinkedIn, GitHub, email |
+## Structure
 
-## 🛠 Stack
-
-- **HTML / CSS / JS vanilla** — aucun build step
-- **Google Fonts** — Inter + JetBrains Mono
-- **Déploiement** : GitHub Pages (branche `main`, dossier racine)
-
-## 📁 Structure
-
-```
-/
-├── index.html                          # Page principale
-├── style.css                           # Dark theme, responsive, animations
-├── script.js                           # Typing effect, scroll reveal, skill bars
-├── assets/                             # Images & icônes
-└── .github/
-    ├── copilot-instructions.md         # Instructions pour GitHub Copilot
-    └── ISSUE_TEMPLATE/
-        └── feature_request.md          # Template pour les issues
+```text
+.
+|-- index.html
+|-- style.css
+|-- script.js
+|-- README.md
+|-- .gitignore
+`-- .github/
+    |-- copilot-instructions.md
+    |-- ISSUE_TEMPLATE/
+    `-- workflows/
 ```
 
-## 🚀 Déploiement
+## Sections de la page
 
-GitHub Pages activé sur la branche `main`, dossier racine `/`.
+1. Hero avec proposition de valeur, CTA et synthese du profil
+2. A propos avec bio, valeurs et centres d'interet
+3. Competences avec categories et barres animees
+4. Projets avec un projet phare et une grille de realisations
+5. Experience sous forme de timeline
+6. Contact avec liens directs et carte CTA
 
-## 👤 Profil
+## Lancer localement
 
-- **Nom** : Gustave
-- **Poste** : Data Scientist & AI/ML Engineer
-- **Entreprise** : Avisia — Paris
-- **Stack** : Python, SQL, Google Cloud, LLM/GenAI, n8n, React/Next.js
-- **Expertise** : GenAI & LLMs, NL2SQL, orchestration d'agents IA, MLOps
+Aucune etape de build n'est necessaire. Ouvrir `index.html` dans un navigateur suffit pour verifier le rendu.
+
+## Deploiement
+
+Le workflow GitHub Actions existant publie le contenu racine du depot sur GitHub Pages a chaque push sur la branche `main`.
+
+## Notes
+
+- Le portfolio reste compatible avec une approche simple et statique.
+- Les visuels peuvent etre remplaces plus tard par de vrais assets sans changer l'architecture.
+- Les nouvelles animations doivent reutiliser la classe `reveal` et les nouvelles jauges le pattern `.skill-fill[data-width]`.

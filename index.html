@@ -1,590 +1,527 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gustave — Data Scientist & AI/ML Engineer</title>
-  <meta name="description" content="Portfolio de Gustave, Data Scientist & AI/ML Engineer chez Avisia Paris. Expert GenAI, LLMs, NL2SQL, orchestration d'agents IA." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gustave | Data Scientist & Ingenieur IA/ML</title>
+  <meta name="description" content="Portfolio de Gustave, Data Scientist et Ingenieur IA/ML chez Avisia a Paris. Expert GenAI, LLMs, NL2SQL, orchestration d'agents IA et MLOps.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta property="og:title" content="Gustave | Data Scientist & Ingenieur IA/ML">
+  <meta property="og:description" content="Portfolio personnel et support de demo GitHub Copilot Agent Mode pour Avisia.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
 
-  <!-- ========== NAVIGATION ========== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">G<span>.</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#experience">Expérience</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Disponible pour nouveaux projets
+  <header class="site-header" id="top">
+    <nav class="navbar" id="navbar" aria-label="Navigation principale">
+      <div class="container nav-container">
+        <a class="nav-logo" href="#hero" aria-label="Retour au debut">Gustave</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#skills">Competences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
       </div>
-      <div class="hero-avatar">
-        <div class="avatar-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-          </svg>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="hero">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-a" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-b" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Portfolio 2026 · Avisia · Paris</p>
+          <div class="hero-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            Disponible pour des projets IA a fort impact
+          </div>
+          <h1>Je conçois des systemes data et IA qui passent du prototype a la production.</h1>
+          <p class="hero-lead">
+            Je suis Gustave, Data Scientist et Ingenieur IA/ML chez Avisia. Je travaille sur les LLMs,
+            le NL2SQL, l'orchestration d'agents, les workflows automatises et les architectures MLOps
+            qui doivent rester explicables, fiables et utiles.
+          </p>
+          <div class="hero-dynamic" aria-live="polite">
+            <span class="hero-dynamic-label">Focales</span>
+            <span class="hero-dynamic-value" id="typedText">GenAI &amp; LLMs</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Voir les projets</a>
+            <a class="btn btn-secondary" href="#contact">Prendre contact</a>
+          </div>
+          <ul class="hero-meta" aria-label="Informations rapides">
+            <li>Paris, France</li>
+            <li>Avisia</li>
+            <li>25 ans</li>
+          </ul>
+        </div>
+
+        <div class="hero-panel reveal reveal-delay-1">
+          <div class="profile-card">
+            <div class="profile-avatar" aria-hidden="true">G</div>
+            <div class="profile-summary">
+              <p class="profile-role">Data Scientist &amp; Ingenieur IA/ML</p>
+              <p class="profile-company">Avisia · Conseil data et IA</p>
+            </div>
+            <dl class="profile-stats">
+              <div>
+                <dt>Expertise</dt>
+                <dd>GenAI, LLMs, NL2SQL</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>Python, SQL, GCP, LangGraph</dd>
+              </div>
+              <div>
+                <dt>Approche</dt>
+                <dd>Produit, rigueur, automatisation</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="signal-card">
+            <p class="signal-title">Ce que j'apporte</p>
+            <ul class="signal-list">
+              <li>Structurer une feuille de route IA realiste</li>
+              <li>Industrialiser des pipelines et agents utiles</li>
+              <li>Relier enjeux metier, data et execution technique</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <h1 class="hero-title">
-        <span class="hero-greeting">Bonjour, je suis</span>
-        <span class="hero-name">Gustave</span>
-      </h1>
-      <h2 class="hero-subtitle">
-        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
-      </h2>
-      <p class="hero-tagline">
-        Je transforme la donnée brute en intelligence actionnable — <br class="break-md" />
-        des <strong>LLMs</strong> aux <strong>pipelines MLOps</strong>, en passant par l'<strong>orchestration d'agents IA</strong>.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn btn-ghost">Me contacter</a>
-      </div>
-      <div class="hero-meta">
-        <span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          Paris, France
-        </span>
-        <span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-          Avisia
-        </span>
-        <span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          25 ans
-        </span>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+      <a class="hero-scroll" href="#about" aria-label="Defiler vers la section A propos">
+        <span>Scroll</span>
+      </a>
+    </section>
 
-  <!-- ========== ABOUT ========== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">01 / À propos</span>
-        <h2 class="section-title">Qui suis-je ?</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p class="about-lead">
-            Data Scientist & AI/ML Engineer passionné, je construis des solutions IA concrètes 
-            qui créent de la valeur réelle pour les entreprises.
-          </p>
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">01</p>
+          <h2>A propos</h2>
           <p>
-            Chez <strong>Avisia</strong>, cabinet parisien spécialisé en data & IA, j'accompagne des clients 
-            dans leur transformation data — de la conception d'architectures cloud à l'industrialisation 
-            de modèles ML, en passant par le développement d'agents IA autonomes.
+            Un profil hybride entre data science, IA appliquee et engineering. Mon terrain de jeu:
+            transformer une ambition GenAI en systeme qui fonctionne vraiment.
           </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-story reveal reveal-delay-1">
+            <p class="about-lead">
+              J'aime les sujets ou la complexite technique doit rester lisible pour les equipes metier.
+            </p>
+            <p>
+              Chez Avisia, j'interviens sur des cas d'usage IA et data qui demandent a la fois une forte
+              qualite de conception et un sens tres concret de l'execution: assistants experts,
+              orchestration d'agents, NL2SQL, automatisation de workflows, pipelines cloud et MLOps.
+            </p>
+            <p>
+              Mon fil conducteur reste le meme: clarifier le probleme, choisir une architecture defensible,
+              puis livrer quelque chose de fiable, observable et utile pour les utilisateurs finaux.
+            </p>
+            <ul class="value-list" aria-label="Valeurs professionnelles">
+              <li>Rigueur technique</li>
+              <li>Impact metier</li>
+              <li>Pedagogie</li>
+              <li>Execution rapide</li>
+            </ul>
+          </article>
+
+          <aside class="about-side reveal reveal-delay-2" aria-label="Interets personnels">
+            <div class="about-card">
+              <p class="card-kicker">En dehors des projets</p>
+              <div class="interest-grid">
+                <span>Course a pied</span>
+                <span>Natation</span>
+                <span>Calisthenics</span>
+                <span>Photographie</span>
+                <span>Menuiserie</span>
+                <span>Espagnol</span>
+                <span>Italien</span>
+                <span>Japonais</span>
+              </div>
+            </div>
+            <div class="about-card">
+              <p class="card-kicker">Maniere de travailler</p>
+              <p>
+                Cadrer vite, prototyper avec exigence, mesurer les compromis, puis rendre l'ensemble simple
+                a maintenir pour les equipes qui reprendront la solution.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">02</p>
+          <h2>Competences</h2>
           <p>
-            Ma passion : faire dialoguer la <strong>rigueur scientifique</strong> avec la <strong>créativité 
-            technique</strong> pour résoudre des problèmes complexes. Je crois que l'IA n'est utile 
-            que lorsqu'elle est comprise, maîtrisée et alignée sur les besoins humains.
+            Une stack orientee IA appliquee, data engineering et industrialisation. L'objectif n'est pas
+            d'empiler les outils, mais de choisir ceux qui tiennent en production.
           </p>
-          <div class="about-values">
-            <div class="value-chip">🎯 Impact</div>
-            <div class="value-chip">🔬 Rigueur</div>
-            <div class="value-chip">🚀 Innovation</div>
-            <div class="value-chip">🤝 Collaboration</div>
-          </div>
         </div>
-        <div class="about-interests">
-          <h3>En dehors du code</h3>
-          <div class="interests-grid">
-            <div class="interest-card">
-              <span class="interest-icon">🏃</span>
-              <span>Course à pied</span>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>GenAI &amp; LLMs</h3>
+            <div class="skill-item">
+              <div class="skill-row"><span>LangChain / LangGraph</span><span>92%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="92"></span></div>
             </div>
-            <div class="interest-card">
-              <span class="interest-icon">🏊</span>
-              <span>Natation</span>
+            <div class="skill-item">
+              <div class="skill-row"><span>Prompt systems &amp; evaluation</span><span>89%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="89"></span></div>
             </div>
-            <div class="interest-card">
-              <span class="interest-icon">💪</span>
-              <span>Calisthenics</span>
+            <div class="skill-item">
+              <div class="skill-row"><span>RAG &amp; retrieval strategy</span><span>86%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="86"></span></div>
             </div>
-            <div class="interest-card">
-              <span class="interest-icon">📷</span>
-              <span>Photographie</span>
+          </article>
+
+          <article class="skill-card reveal reveal-delay-1">
+            <h3>Data &amp; engineering</h3>
+            <div class="skill-item">
+              <div class="skill-row"><span>Python</span><span>95%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="95"></span></div>
             </div>
-            <div class="interest-card">
-              <span class="interest-icon">🪵</span>
-              <span>Menuiserie</span>
+            <div class="skill-item">
+              <div class="skill-row"><span>SQL &amp; analytics engineering</span><span>91%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="91"></span></div>
             </div>
-            <div class="interest-card">
-              <span class="interest-icon">🗣️</span>
-              <span>ES • IT • JP</span>
+            <div class="skill-item">
+              <div class="skill-row"><span>APIs &amp; integration</span><span>82%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="82"></span></div>
             </div>
-          </div>
+          </article>
+
+          <article class="skill-card reveal reveal-delay-2">
+            <h3>Cloud &amp; MLOps</h3>
+            <div class="skill-item">
+              <div class="skill-row"><span>Google Cloud Platform</span><span>88%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="88"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span>Vertex AI / BigQuery</span><span>85%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="85"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span>Observabilite et pipeline lifecycle</span><span>79%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="79"></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card reveal reveal-delay-3">
+            <h3>Automatisation produit</h3>
+            <div class="skill-item">
+              <div class="skill-row"><span>n8n &amp; workflows</span><span>90%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="90"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span>NL2SQL</span><span>87%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="87"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-row"><span>Front-end demo avec React / Next.js</span><span>72%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="72"></span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="badge-cloud reveal reveal-delay-1" aria-label="Nuage de technologies">
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Google Cloud</span>
+          <span>LangChain</span>
+          <span>LangGraph</span>
+          <span>Vertex AI</span>
+          <span>BigQuery</span>
+          <span>n8n</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>MLOps</span>
+          <span>Prompt Engineering</span>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== SKILLS ========== -->
-  <section class="section section-alt" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">02 / Compétences</span>
-        <h2 class="section-title">Stack technique</h2>
-      </div>
-      <div class="skills-categories">
-
-        <div class="skill-category">
-          <h3 class="skill-category-title">
-            <span class="skill-icon">🤖</span> GenAI & LLMs
-          </h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info"><span>LangChain / LangGraph</span><span class="skill-level">Expert</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>OpenAI / Anthropic API</span><span class="skill-level">Expert</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>RAG & Vector DBs</span><span class="skill-level">Avancé</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Fine-tuning & PEFT</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
-            </div>
-          </div>
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">03</p>
+          <h2>Projets</h2>
+          <p>
+            Une selection de sujets qui melangent architecture, experimentation et execution produit.
+          </p>
         </div>
 
-        <div class="skill-category">
-          <h3 class="skill-category-title">
-            <span class="skill-icon">🐍</span> Langages & Data
-          </h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info"><span>Python</span><span class="skill-level">Expert</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+        <div class="projects-grid">
+          <article class="project-card project-card-featured reveal">
+            <div class="project-topline">
+              <p class="project-label">Projet phare</p>
+              <span class="project-year">2026</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>SQL</span><span class="skill-level">Expert</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            <h3>Agent NL2SQL multi-table pour environnement complexe</h3>
+            <p>
+              Conception d'un agent capable de traduire des questions metier en requetes SQL fiables sur des
+              schemas riches, avec guardrails, validation intermediaire et orchestration LangGraph.
+            </p>
+            <ul class="project-highlights">
+              <li>Routing de requetes selon le contexte metier</li>
+              <li>Validation et correction avant execution SQL</li>
+              <li>Restitution interpretable pour utilisateurs non techniques</li>
+            </ul>
+            <div class="tag-list">
+              <span>LangGraph</span>
+              <span>NL2SQL</span>
+              <span>BigQuery</span>
+              <span>Vertex AI</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Pandas / NumPy / Spark</span><span class="skill-level">Avancé</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>React / Next.js</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <div class="skill-category">
-          <h3 class="skill-category-title">
-            <span class="skill-icon">☁️</span> Cloud & MLOps
-          </h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info"><span>Google Cloud Platform</span><span class="skill-level">Expert</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-topline">
+              <p class="project-label">RAG</p>
+              <span class="project-year">2025</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Vertex AI / BigQuery</span><span class="skill-level">Avancé</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Docker / Kubernetes</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>MLflow / Weights & Biases</span><span class="skill-level">Avancé</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="skill-category-title">
-            <span class="skill-icon">⚡</span> Automatisation
-          </h3>
-          <div class="skill-list">
-            <div class="skill-item">
-              <div class="skill-info"><span>n8n</span><span class="skill-level">Expert</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>NL2SQL</span><span class="skill-level">Avancé</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>Agent Orchestration</span><span class="skill-level">Expert</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info"><span>CI/CD & GitHub Actions</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Tech badges -->
-      <div class="tech-badges">
-        <span class="tech-badge">Python</span>
-        <span class="tech-badge">SQL</span>
-        <span class="tech-badge">Google Cloud</span>
-        <span class="tech-badge">LangChain</span>
-        <span class="tech-badge">OpenAI</span>
-        <span class="tech-badge">n8n</span>
-        <span class="tech-badge">React</span>
-        <span class="tech-badge">Next.js</span>
-        <span class="tech-badge">Docker</span>
-        <span class="tech-badge">BigQuery</span>
-        <span class="tech-badge">Vertex AI</span>
-        <span class="tech-badge">MLflow</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== PROJECTS ========== -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">03 / Projets</span>
-        <h2 class="section-title">Réalisations</h2>
-      </div>
-      <div class="projects-grid">
-
-        <article class="project-card featured">
-          <div class="project-card-header">
-            <div class="project-number">01</div>
-            <div class="project-links">
-              <button type="button" class="project-link" aria-label="Voir le code source (indisponible)" disabled aria-disabled="true">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
-              </button>
-              <button type="button" class="project-link" aria-label="Voir le projet en ligne (indisponible)" disabled aria-disabled="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </button>
-            </div>
-          </div>
-          <div class="project-card-body">
-            <h3>Agent NL2SQL Multi-Table</h3>
-            <p>Agent IA capable de répondre à des questions en langage naturel sur des bases de données complexes multi-tables. Utilise LangGraph pour l'orchestration et Vertex AI pour l'inférence.</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">LangGraph</span>
-            <span class="tag">NL2SQL</span>
-            <span class="tag">BigQuery</span>
-            <span class="tag">Vertex AI</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-header">
-            <div class="project-number">02</div>
-            <div class="project-links">
-              <a href="#" class="project-link" aria-label="Voir le code source">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
-              </a>
-            </div>
-          </div>
-          <div class="project-card-body">
             <h3>Pipeline RAG d'entreprise</h3>
-            <p>Système de RAG (Retrieval-Augmented Generation) pour l'analyse de documents internes d'entreprise. Ingestion, chunking intelligent, re-ranking et génération contextualisée.</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">RAG</span>
-            <span class="tag">LangChain</span>
-            <span class="tag">ChromaDB</span>
-            <span class="tag">Python</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-header">
-            <div class="project-number">03</div>
-            <div class="project-links">
-              <a href="#" class="project-link" aria-label="Voir le code source">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
-              </a>
+            <p>
+              Ingestion documentaire, chunking cible, re-ranking et generation contextualisee pour aider des
+              equipes a interroger leur base de connaissances avec des reponses plus justifiables.
+            </p>
+            <div class="tag-list">
+              <span>RAG</span>
+              <span>LangChain</span>
+              <span>Python</span>
+              <span>Evaluation</span>
             </div>
-          </div>
-          <div class="project-card-body">
-            <h3>Workflow Automation avec n8n</h3>
-            <p>Automatisation de workflows data complexes via n8n : ingestion de sources hétérogènes, enrichissement IA, alerting intelligent et reporting automatique pour clients B2B.</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">n8n</span>
-            <span class="tag">Python</span>
-            <span class="tag">API REST</span>
-            <span class="tag">Automatisation</span>
-          </div>
-        </article>
+          </article>
 
-        <article class="project-card">
-          <div class="project-card-header">
-            <div class="project-number">04</div>
-            <div class="project-links">
-              <a href="#" class="project-link" aria-label="Voir le code source">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
-              </a>
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-topline">
+              <p class="project-label">Workflow</p>
+              <span class="project-year">2025</span>
             </div>
-          </div>
-          <div class="project-card-body">
-            <h3>Plateforme MLOps sur GCP</h3>
-            <p>Architecture MLOps complète sur Google Cloud : entraînement automatisé avec Vertex AI Pipelines, registry de modèles, monitoring de drift et déploiement continu.</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Vertex AI</span>
-            <span class="tag">MLflow</span>
-            <span class="tag">GCP</span>
-            <span class="tag">MLOps</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-header">
-            <div class="project-number">05</div>
-            <div class="project-links">
-              <a href="#" class="project-link" aria-label="Voir le projet en ligne">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
+            <h3>Automatisation de workflows avec n8n</h3>
+            <p>
+              Construction de chaines d'automatisation pour connecter sources heterogenes, APIs LLM et logiques
+              metier, avec supervision et alerting sur les cas critiques.
+            </p>
+            <div class="tag-list">
+              <span>n8n</span>
+              <span>APIs</span>
+              <span>Automation</span>
+              <span>LLMs</span>
             </div>
-          </div>
-          <div class="project-card-body">
-            <h3>Dashboard Analytics Temps Réel</h3>
-            <p>Interface Next.js connectée à BigQuery pour visualiser des métriques business en temps réel. Filtres dynamiques, exports automatiques et alertes configurables.</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Next.js</span>
-            <span class="tag">BigQuery</span>
-            <span class="tag">SQL</span>
-            <span class="tag">React</span>
-          </div>
-        </article>
+          </article>
 
-        <article class="project-card">
-          <div class="project-card-header">
-            <div class="project-number">06</div>
-            <div class="project-links">
-              <a href="#" class="project-link" aria-label="Voir le code source">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
-              </a>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <p class="project-label">MLOps</p>
+              <span class="project-year">2024</span>
             </div>
-          </div>
-          <div class="project-card-body">
-            <h3>Fine-tuning LLM domaine métier</h3>
-            <p>Fine-tuning d'un modèle open-source (Mistral) sur données métier spécifiques avec LoRA/QLoRA. Évaluation rigoureuse, comparaison avec GPT-4 et déploiement optimisé.</p>
-          </div>
-          <div class="project-tags">
-            <span class="tag">Mistral</span>
-            <span class="tag">LoRA</span>
-            <span class="tag">PEFT</span>
-            <span class="tag">Hugging Face</span>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== EXPERIENCE ========== -->
-  <section class="section section-alt" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">04 / Expérience</span>
-        <h2 class="section-title">Parcours</h2>
-      </div>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-marker current"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Data Scientist & AI/ML Engineer</h3>
-                <span class="timeline-company">Avisia — Paris</span>
-              </div>
-              <span class="timeline-date">2023 — Présent</span>
+            <h3>Plateforme MLOps sur Google Cloud</h3>
+            <p>
+              Pipeline de train, versioning et deploiement pour fiabiliser le cycle de vie des modeles et
+              rendre leur exploitation observable par les equipes data et produit.
+            </p>
+            <div class="tag-list">
+              <span>GCP</span>
+              <span>Vertex AI</span>
+              <span>MLflow</span>
+              <span>Monitoring</span>
             </div>
-            <ul class="timeline-tasks">
-              <li>Conception et déploiement d'agents IA autonomes (LangGraph, LangChain) pour automatiser des processus métier complexes</li>
-              <li>Développement de solutions NL2SQL permettant d'interroger des entrepôts de données en langage naturel</li>
-              <li>Construction de pipelines MLOps sur GCP (Vertex AI, BigQuery, Cloud Run) de bout en bout</li>
-              <li>Automatisation de workflows data avec n8n et intégration d'APIs LLM (OpenAI, Anthropic, Mistral)</li>
-              <li>Accompagnement et formation de clients sur les usages GenAI & bonnes pratiques prompt engineering</li>
-            </ul>
-            <div class="timeline-tech">
-              <span>Python</span><span>GCP</span><span>LangChain</span><span>n8n</span><span>Vertex AI</span>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-topline">
+              <p class="project-label">Analytics</p>
+              <span class="project-year">2024</span>
             </div>
-          </div>
+            <h3>Dashboard analytics temps reel</h3>
+            <p>
+              Interface orientee decision pour exposer des signaux business cles, connecter les donnees BigQuery
+              et fournir un front simple a manipuler par des utilisateurs metier.
+            </p>
+            <div class="tag-list">
+              <span>Next.js</span>
+              <span>BigQuery</span>
+              <span>SQL</span>
+              <span>React</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-topline">
+              <p class="project-label">LLM ops</p>
+              <span class="project-year">2023</span>
+            </div>
+            <h3>Fine-tuning specialise sur donnees metier</h3>
+            <p>
+              Cadrage d'experiences de fine-tuning et comparaison avec des modeles generalistes pour arbitrer le
+              bon niveau de personnalisation en fonction du ROI et des contraintes d'exploitation.
+            </p>
+            <div class="tag-list">
+              <span>Mistral</span>
+              <span>PEFT</span>
+              <span>Evaluation</span>
+              <span>Hugging Face</span>
+            </div>
+          </article>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Stage — Data Scientist</h3>
-                <span class="timeline-company">Startup FinTech — Paris</span>
-              </div>
-              <span class="timeline-date">2022 — 2023</span>
-            </div>
-            <ul class="timeline-tasks">
-              <li>Modèles de scoring crédit & détection de fraude (XGBoost, Random Forest)</li>
-              <li>Pipeline de feature engineering sur données transactionnelles (Pandas, Spark)</li>
-              <li>Mise en production via API FastAPI déployée sur Cloud Run</li>
-            </ul>
-            <div class="timeline-tech">
-              <span>Python</span><span>Scikit-learn</span><span>FastAPI</span><span>GCP</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Master en Data Science & IA</h3>
-                <span class="timeline-company">École d'Ingénieurs — Paris</span>
-              </div>
-              <span class="timeline-date">2020 — 2022</span>
-            </div>
-            <ul class="timeline-tasks">
-              <li>Spécialisation Machine Learning, Deep Learning et traitement du langage naturel</li>
-              <li>Projets de recherche sur l'interprétabilité des modèles (XAI)</li>
-              <li>Mention Très Bien — Mémoire sur les architectures Transformer pour la NL2SQL</li>
-            </ul>
-            <div class="timeline-tech">
-              <span>Python</span><span>PyTorch</span><span>NLP</span><span>Transformers</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Licence en Mathématiques Appliquées</h3>
-                <span class="timeline-company">Université — Paris</span>
-              </div>
-              <span class="timeline-date">2017 — 2020</span>
-            </div>
-            <ul class="timeline-tasks">
-              <li>Statistiques, probabilités, algèbre linéaire et optimisation</li>
-              <li>Initiation à la programmation Python et R</li>
-            </ul>
-            <div class="timeline-tech">
-              <span>Python</span><span>R</span><span>Statistiques</span>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== CONTACT ========== -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">05 / Contact</span>
-        <h2 class="section-title">Travaillons ensemble</h2>
-        <p class="section-subtitle">
-          Vous avez un projet data ou IA ambitieux ? Je serais ravi d'en discuter.
-        </p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p class="contact-text">
-            Que ce soit pour une mission de conseil, un projet freelance, ou simplement pour échanger 
-            sur l'IA et la data — n'hésitez pas à me contacter !
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">04</p>
+          <h2>Experience</h2>
+          <p>
+            Un parcours centre sur la mise en oeuvre de solutions data et IA utiles, du cadrage jusqu'au run.
           </p>
-          <div class="contact-links">
-            <a href="mailto:gustave@avisia.fr" class="contact-item">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div>
-                <span class="contact-label">Email</span>
-                <span class="contact-value">gustave@avisia.fr</span>
-              </div>
-            </a>
-            <a href="https://linkedin.com/in/gustave-avisia" target="_blank" rel="noopener noreferrer" class="contact-item">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              </div>
-              <div>
-                <span class="contact-label">LinkedIn</span>
-                <span class="contact-value">linkedin.com/in/gustave-avisia</span>
-              </div>
-            </a>
-            <a href="https://github.com/gvern" target="_blank" rel="noopener noreferrer" class="contact-item">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
-              </div>
-              <div>
-                <span class="contact-label">GitHub</span>
-                <span class="contact-value">github.com/gvern</span>
-              </div>
-            </a>
-          </div>
         </div>
-        <div class="contact-card">
-          <div class="contact-availability">
-            <div class="availability-dot"></div>
-            <span>Disponible pour missions</span>
-          </div>
-          <h3>Démarrons une conversation</h3>
-          <p>Envoyez-moi un message sur LinkedIn ou par email — je réponds généralement dans les 24h.</p>
-          <a href="mailto:gustave@avisia.fr" class="btn btn-primary btn-full">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Envoyer un email
-          </a>
-          <a href="https://linkedin.com/in/gustave-avisia" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-full">
-            <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-copy">© 2026 Gustave — Data Scientist & AI/ML Engineer chez Avisia</p>
-        <div class="footer-links">
-          <a href="https://github.com/gvern" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/gustave-avisia" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:gustave@avisia.fr">Email</a>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker timeline-marker-active" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <div>
+                  <p class="timeline-role">Data Scientist &amp; Ingenieur IA/ML</p>
+                  <p class="timeline-company">Avisia · Paris</p>
+                </div>
+                <p class="timeline-date">2023 - aujourd'hui</p>
+              </div>
+              <ul>
+                <li>Conception d'agents IA et assistants experts pour des processus metier complexes.</li>
+                <li>Developpement de solutions NL2SQL et interfaces data en langage naturel.</li>
+                <li>Mise en place de pipelines cloud et pratiques MLOps sur Google Cloud.</li>
+                <li>Animation d'ateliers d'acculturation GenAI et accompagnement des equipes clientes.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Python</span>
+                <span>GCP</span>
+                <span>LangChain</span>
+                <span>LangGraph</span>
+                <span>n8n</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <div>
+                  <p class="timeline-role">Stage Data Scientist</p>
+                  <p class="timeline-company">FinTech · Paris</p>
+                </div>
+                <p class="timeline-date">2022 - 2023</p>
+              </div>
+              <ul>
+                <li>Modeles de scoring et de detection de fraude sur donnees transactionnelles.</li>
+                <li>Construction de pipelines de preparation de donnees et exposition via API.</li>
+                <li>Travail sur la mise en production et les enjeux de monitoring initial.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Scikit-learn</span>
+                <span>FastAPI</span>
+                <span>Cloud Run</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <div>
+                  <p class="timeline-role">Master Data Science &amp; IA</p>
+                  <p class="timeline-company">Paris</p>
+                </div>
+                <p class="timeline-date">2020 - 2022</p>
+              </div>
+              <ul>
+                <li>Specialisation machine learning, deep learning et traitement du langage naturel.</li>
+                <li>Travaux autour des Transformers et de l'interpretabilite des modeles.</li>
+                <li>Memoire oriente architectures de NLP appliquees a des cas metier.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>PyTorch</span>
+                <span>NLP</span>
+                <span>Transformers</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container contact-layout">
+        <div class="section-heading section-heading-left reveal">
+          <p class="section-index">05</p>
+          <h2>Contact</h2>
+          <p>
+            Pour une mission de conseil, un sujet IA appliquee ou un echange sur les agents et la production
+            des systemes LLM, je reponds volontiers.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-list reveal reveal-delay-1">
+            <a class="contact-item" href="mailto:gustave@avisia.fr">
+              <span class="contact-label">Email</span>
+              <strong>gustave@avisia.fr</strong>
+            </a>
+            <a class="contact-item" href="https://github.com/gvern" target="_blank" rel="noreferrer">
+              <span class="contact-label">GitHub</span>
+              <strong>github.com/gvern</strong>
+            </a>
+            <a class="contact-item" href="https://linkedin.com/in/gustave-avisia" target="_blank" rel="noreferrer">
+              <span class="contact-label">LinkedIn</span>
+              <strong>linkedin.com/in/gustave-avisia</strong>
+            </a>
+          </div>
+
+          <aside class="contact-card reveal reveal-delay-2">
+            <p class="card-kicker">Disponibilite</p>
+            <h3>Construire une feuille de route IA utile, pas seulement impressionnante.</h3>
+            <p>
+              J'interviens volontiers sur du cadrage, du prototypage avance ou de l'industrialisation de cas
+              d'usage data et GenAI avec une forte exigence de mise en production.
+            </p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:gustave@avisia.fr">Envoyer un email</a>
+              <a class="btn btn-secondary" href="https://linkedin.com/in/gustave-avisia" target="_blank" rel="noreferrer">Contacter sur LinkedIn</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <p>Portfolio de Gustave · Support de demo GitHub Copilot Agent Mode · 2026</p>
+      <a href="#top">Retour en haut</a>
     </div>
   </footer>
 
