@@ -277,6 +277,40 @@ img {
 .nav-toggle.open span:nth-child(2) { opacity: 0; }
 .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* ---- Language Switcher ---- */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 16px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 4px 8px;
+  transition: var(--transition);
+}
+
+.lang-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent-light);
+  background: var(--accent-glow);
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
 /* ================================================
    HERO
    ================================================ */
@@ -1149,6 +1183,15 @@ img {
   .nav-toggle {
     display: flex;
     z-index: 101;
+  }
+
+  .lang-switcher {
+    margin-left: 8px;
+  }
+
+  .lang-btn {
+    padding: 4px 6px;
+    font-size: 0.68rem;
   }
 
   .hero {
