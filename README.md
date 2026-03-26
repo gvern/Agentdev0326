@@ -36,13 +36,16 @@ Site web personnel de type portfolio / CV numérique pour **Gustave**, Data Scie
 ├── assets/                             # Images & icônes
 └── .github/
     ├── copilot-instructions.md         # Instructions pour GitHub Copilot
-    └── ISSUE_TEMPLATE/
-        └── feature_request.md          # Template pour les issues
+    ├── workflows/
+    │   └── deploy.yml                  # Workflow CI/CD — Deploy to GitHub Pages
+
 ```
 
 ## 🚀 Déploiement
 
 GitHub Pages activé sur la branche `main`, dossier racine `/`.
+
+Le déploiement est automatisé via le workflow **"Deploy to GitHub Pages"** (`.github/workflows/deploy.yml`), déclenché à chaque push sur `main` ou manuellement via `workflow_dispatch`. Il utilise les actions officielles GitHub Pages (`configure-pages`, `upload-pages-artifact`, `deploy-pages`).
 
 ## 👤 Profil
 
